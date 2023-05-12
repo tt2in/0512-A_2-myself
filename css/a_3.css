@@ -1,0 +1,83 @@
+@charset "uft-8";
+*{padding: 0;margin: 0;box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none;color: inherit;}
+body{font-size: 14px;line-height: 1.5;color: #333;background-color: #fff;}
+.wrap{width: 1200px;margin: 0 auto;}
+
+/* .header */
+.header{display: flex;align-items: center;justify-content: space-between;height: 100px;}
+
+.gnb{display: flex;}
+.gnb li{position: relative;}
+.gnb>li>a{
+    display: block;height: 50px;padding: 0 30px;
+    line-height: 50px;font-size: 16px;
+}
+.gnb>li:hover>a{background-color: lightslategray;color: white;font-weight: bold;}
+.gnb ul{
+    display: none;z-index: 1;
+    position: absolute;top: 50px;left: 0;
+    background-color: #eee;
+    width: 100%; padding-bottom: 10px;
+    text-align: center;
+}
+.gnb ul li a{display: block;padding: 10px 0;}
+.gnb ul li a:hover{background-color: lightslategray;color: white;font-weight: blod;}
+
+/* .slide */
+.slide{height: 300px;position: relative;overflow: hidden;}
+.slider{position: absolute;top: 0;left: 0;}
+.slider img{display: block;width: 100%;}
+
+/* .contents */
+.contents{height: 180px;margin: 10px 0;
+    display: flex;gap: 20px;width: 100%;}
+.tab{flex: 1;}
+.tab_title{display: flex;gap: 7px;}
+.tab_title h3{height: 50px;line-height: 50px;
+    background-color: lightslategray;color: #fff;
+    text-align: center;font-size: 17px;
+    flex: 1;
+}
+.tab_title h3.on{background-color: #fff;color: lightslategray;font-weight: bold;}
+
+.tab_contents{padding: 7px;height: 130px;width: 386px;
+    border: 1px solid lightslategray;}
+
+.notice {width: 100%;height: 130px;
+    /* display: none; */
+    height: 100%;width: 100%;
+}
+.notice li a{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 4px 0;
+}
+.notice li a:hover{text-decoration: underline;}
+
+.gallery{display: flex;gap: 5px;
+    height: 100%;width: 100%;
+    display: none;
+}
+.gallery li a img{
+    display: none;
+    width: 100%;height: 100%;object-fit: cover;
+}
+.banner{flex: 1;}
+
+.link{flex: 1;display: flex;flex-direction: column;
+    width: 100%;height: 180px;gap: 12px;}
+.link a{flex: 1;text-align:center;line-height: 52px;
+    display: block;
+    background-color: lightblue;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+
+
+
+/* .footer */
